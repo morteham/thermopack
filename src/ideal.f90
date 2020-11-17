@@ -419,7 +419,6 @@ contains
            comp%id_cp%cp(3)*Ts**3/3.0+comp%id_cp%cp(4)*Ts**4/4.0 - &
            comp%id_cp%cp(5)/Ts
       H_id=H_id*1.0e3 + comp%href
-
     end select method_H
   end function Hideal
 
@@ -1039,6 +1038,7 @@ contains
   !! \author Morten Hammer
   subroutine set_reference_energies(comps)
     use compdata, only: gendata_pointer
+    use thermopack_constants, only: Rgas
     implicit none
     type(gendata_pointer), intent(inout) :: comps(:)
     !
@@ -1048,8 +1048,8 @@ contains
     T0 = 298.15
     do i=1,size(comps)
       ! Test if parameters are given
-      if (comps(i)%p_comp%sref /= 0 .and. comps(i)%p_comp%href /= 0) then
-        s_id = Sideal_T(comps(i)%p_comp, i, T0) - comps(i)%p_comp%sref
+      if (comps(i)%p_comp%sref /= 0 .or. comps(i)%p_comp%href /= 0) then
+        s_id = Sideal_T(comps(i)%p_comp, i, T0) - comps(i)%p_comp%sref - Rgas*log(1e5)
         comps(i)%p_comp%sref = comps(i)%p_comp%sref - s_id
         h_id = Hideal(comps(i)%p_comp, i, T0) - comps(i)%p_comp%href
         comps(i)%p_comp%href = comps(i)%p_comp%href - h_id
