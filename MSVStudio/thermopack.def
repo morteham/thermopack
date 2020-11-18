@@ -28,6 +28,7 @@ EXPORTS
 	eos_mp_enthalpy_
 	eos_mp_compmoleweight_
 	eos_mp_idealenthalpysingle_
+	eos_mp_idealentropysingle_
 	speed_of_sound_mp_sound_velocity_2ph_
 	ph_solver_mp_setphtolerance_
 	tp_solver_mp_twophasetpflash_

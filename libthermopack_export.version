@@ -53,6 +53,7 @@ libthermopack {
 	  *_enthalpy;
 	  *_compmoleweight;
 	  *_idealenthalpysingle;
+	  *_idealentropysingle;
 	  *_sound_velocity_2ph;
 	  *_comp_index_active;
 	  *_comp_name_active;
