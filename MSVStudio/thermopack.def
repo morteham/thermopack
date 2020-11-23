@@ -65,6 +65,8 @@ EXPORTS
 	thermopack_setkijandji_
 	thermopack_gethvparam_
 	thermopack_sethvparam_
+	thermopack_set_volume_shift_parameter_
+	thermopack_get_volume_shift_parameter_
 	saftvrmie_options_mp_enable_hs_
 	saftvrmie_options_mp_enable_a1_
 	saftvrmie_options_mp_enable_a2_

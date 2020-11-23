@@ -28,6 +28,8 @@ libthermopack {
           thermopack_setkijandji_;
           thermopack_gethvparam_;
           thermopack_sethvparam_;
+	  thermopack_set_volume_shift_parameter_;
+	  thermopack_get_volume_shift_parameter_;
 	  get_phase_flags_c;
 	  #
 	  *_init_thermo;
