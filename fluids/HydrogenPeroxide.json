@@ -12,12 +12,12 @@
     "bib_reference": "10.1016/j.fluid.2016.09.003",
     "temperature": 730.15,
     "pressure": 217.00e5,
-    "compressibility": 0.33
+    "compressibility": 0.2748
   },
   "triple": {
     "ref": "Default",
-    "bib_reference": "",
-    "temperature": 0.0,
+    "bib_reference": "NIST",
+    "temperature": 272.7403,
     "pressure": 0.0
   },
   "acentric_factor": {

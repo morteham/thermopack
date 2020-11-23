@@ -1916,5 +1916,12 @@
     "ref": "Default",
     "bib_reference": "",
     "kij":  5.00000000E-01
+  },
+  "vdW-275": {
+    "comp1": "H2O2",
+    "comp2": "H2O",
+    "ref": "Default",
+    "bib_reference": "",
+    "kij":  -0.05
   }
 }
